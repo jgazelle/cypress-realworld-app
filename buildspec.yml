@@ -56,6 +56,7 @@ phases:
       - echo $CY_BROWSER
       - echo $CY_SPEC
       - echo $CY_CONFIG
+      - npm install -D @cypress/webpack-preprocessor @cypress/webpack-batteries-included-preprocessor
       - yarn install --ignore-engines
       - yarn install --frozen-lockfile
   pre_build:
